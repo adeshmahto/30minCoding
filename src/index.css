@@ -10,4 +10,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    align-items: center;
+    background: rgb(30, 29, 29);
+    background-color: #0c1022;
 }
