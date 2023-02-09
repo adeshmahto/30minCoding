@@ -16,7 +16,7 @@ function Viewers() {
          </Container2>
          <Container2>
          <Wrap  >
-            <a href='/contentpage1'>
+            <a href='/pythoncontainer'>
             <img  style={{height:'130px',width:"100px"}} src="pythonimg2.png"/>
             </a>
         </Wrap>
@@ -24,7 +24,7 @@ function Viewers() {
          </Container2>
          <Container2>
          <Wrap  >
-            <a href='/contentpage1'>
+            <a href='/javasriptcontainer'>
             <img  style={{height:'130px',width:"130px"}} src="javasripte.png"/>
             </a>
         </Wrap>
@@ -32,7 +32,7 @@ function Viewers() {
          </Container2>
          <Container2>
          <Wrap  >
-            <a href='/contentpage1'>
+            <a href='/cpp'>
             <img  style={{height:'130px',width:"170px"}} src="c.png"/>
             </a>
         </Wrap>
@@ -40,7 +40,7 @@ function Viewers() {
          </Container2>
          <Container2>
          <Wrap  >
-            <a href='/contentpage1'>
+            <a href='/c'>
             <img  style={{  height:'130px',width:"170px"}} src="cl.png"/>
             </a>
         </Wrap>

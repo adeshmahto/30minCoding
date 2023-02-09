@@ -10,6 +10,13 @@ import Guide from './Components/Guide';
 import Notes from './Components/Notes';
 import axios from 'axios'
 import { useEffect } from 'react';
+import Editor from './Components/Editor';
+import Compiler from './Compiler/Compiler';
+import Blackboad from './Components/Blackboad';
+import PythonContainer from './Components/PythonContainer';
+import JavaSriptContainer from './Components/JavaSriptContainer';
+import Cpp from './Components/Cpp';
+import C from './Components/C';
 
 
 function App() {
@@ -24,8 +31,9 @@ function App() {
   return (
     <div className="App">
 
+  <Blackboad/>
 
-
+   
       <BrowserRouter>
     
       <Routes>
@@ -33,6 +41,12 @@ function App() {
         <Route path='guide/' element={<Guide/>}/>
          <Route path='notes/' element={<Notes/>}/>
          <Route path='javacontainer/' element={<JavaContainer/>}/>
+         <Route path='editor' element={<Compiler/>}/>
+         <Route path='pythoncontainer' element={<PythonContainer/>}/>
+         <Route path='javasriptcontainer' element={<JavaSriptContainer/>} />
+         <Route path='cpp' element={<Cpp/>}/>
+         <Route path='c'element={<C/>}/>
+         
       </Routes>
       
       </BrowserRouter>

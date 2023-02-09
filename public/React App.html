@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="defer" src="React%20App_files/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    align-items: center;
+    background: rgb(30, 29, 29);
+    background-color: #0c1022;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztJQUNULG1CQUFtQjtJQUNuQiwyQkFBMkI7SUFDM0IseUJBQXlCO0FBQzdCIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJhY2tncm91bmQ6IHJnYigzMCwgMjksIDI5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMGMxMDIyO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsY0FBYztFQUNkLG9CQUFvQjtBQUN0Qjs7QUFFQTtFQUNFO0lBQ0UsNENBQTRDO0VBQzlDO0FBQ0Y7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2Qiw2QkFBNkI7RUFDN0IsWUFBWTtBQUNkOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFO0lBQ0UsdUJBQXVCO0VBQ3pCO0VBQ0E7SUFDRSx5QkFBeUI7RUFDM0I7QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIi5BcHAge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5BcHAtbG9nbyB7XG4gIGhlaWdodDogNDB2bWluO1xuICBwb2ludGVyLWV2ZW50czogbm9uZTtcbn1cblxuQG1lZGlhIChwcmVmZXJzLXJlZHVjZWQtbW90aW9uOiBuby1wcmVmZXJlbmNlKSB7XG4gIC5BcHAtbG9nbyB7XG4gICAgYW5pbWF0aW9uOiBBcHAtbG9nby1zcGluIGluZmluaXRlIDIwcyBsaW5lYXI7XG4gIH1cbn1cblxuLkFwcC1oZWFkZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjgyYzM0O1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogY2FsYygxMHB4ICsgMnZtaW4pO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5BcHAtbGluayB7XG4gIGNvbG9yOiAjNjFkYWZiO1xufVxuXG5Aa2V5ZnJhbWVzIEFwcC1sb2dvLXNwaW4ge1xuICBmcm9tIHtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgwZGVnKTtcbiAgfVxuICB0byB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTtcbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style type="text/css">.styles_typicalWrapper__1_Uvh::after {
+  content: "|";
+  animation: styles_blink__2CKyC 1s infinite step-start;
+}
+
+@keyframes styles_blink__2CKyC {
+  50% { opacity: 0; }
+}</style><style>#HeaderEditor{
+    color: blue;
+    position: relative;
+    left: 82px;
+}
+
+.language {
+    
+ 
+  }
+  #outputHeader{
+    position: relative;
+    right:15vw;
+
+  }
+  .heading {
+    
+    position: relative;
+   
+    
+  }
+  #source {
+    background: #312a2a52;
+    margin-right: 300px;
+    height: 60vh;
+    width: 50vw;
+  
+  }
+  #input {
+    background: #312a2a52;
+ height: 20vh;
+ margin-top: 40px;
+ position: relative;
+ bottom: 30vh;
+ right: 30vw;
+
+  }
+  #userHeader{
+    position: relative;
+   bottom: 30vh;
+   right: 30vw;
+  }
+  #output {
+    background: #312a2a52;
+    height: 20vh;
+    width: 50vw;
+    margin-right: 480px;
+    margin-top: 20px;
+
+ 
+  }
+  .language {
+ 
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9Db21waWxlci9Db21waWxlci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0lBQ1gsa0JBQWtCO0lBQ2xCLFVBQVU7QUFDZDs7QUFFQTs7O0VBR0U7RUFDQTtJQUNFLGtCQUFrQjtJQUNsQixVQUFVOztFQUVaO0VBQ0E7O0lBRUUsa0JBQWtCOzs7RUFHcEI7RUFDQTtJQUNFLHFCQUFxQjtJQUNyQixtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLFdBQVc7O0VBRWI7RUFDQTtJQUNFLHFCQUFxQjtDQUN4QixZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLGtCQUFrQjtDQUNsQixZQUFZO0NBQ1osV0FBVzs7RUFFVjtFQUNBO0lBQ0Usa0JBQWtCO0dBQ25CLFlBQVk7R0FDWixXQUFXO0VBQ1o7RUFDQTtJQUNFLHFCQUFxQjtJQUNyQixZQUFZO0lBQ1osV0FBVztJQUNYLG1CQUFtQjtJQUNuQixnQkFBZ0I7OztFQUdsQjtFQUNBOztFQUVBIiwic291cmNlc0NvbnRlbnQiOlsiI0hlYWRlckVkaXRvcntcclxuICAgIGNvbG9yOiBibHVlO1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgbGVmdDogODJweDtcclxufVxyXG5cclxuLmxhbmd1YWdlIHtcclxuICAgIFxyXG4gXHJcbiAgfVxyXG4gICNvdXRwdXRIZWFkZXJ7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICByaWdodDoxNXZ3O1xyXG5cclxuICB9XHJcbiAgLmhlYWRpbmcge1xyXG4gICAgXHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgIFxyXG4gICAgXHJcbiAgfVxyXG4gICNzb3VyY2Uge1xyXG4gICAgYmFja2dyb3VuZDogIzMxMmEyYTUyO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAzMDBweDtcclxuICAgIGhlaWdodDogNjB2aDtcclxuICAgIHdpZHRoOiA1MHZ3O1xyXG4gIFxyXG4gIH1cclxuICAjaW5wdXQge1xyXG4gICAgYmFja2dyb3VuZDogIzMxMmEyYTUyO1xyXG4gaGVpZ2h0OiAyMHZoO1xyXG4gbWFyZ2luLXRvcDogNDBweDtcclxuIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuIGJvdHRvbTogMzB2aDtcclxuIHJpZ2h0OiAzMHZ3O1xyXG5cclxuICB9XHJcbiAgI3VzZXJIZWFkZXJ7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgIGJvdHRvbTogMzB2aDtcclxuICAgcmlnaHQ6IDMwdnc7XHJcbiAgfVxyXG4gICNvdXRwdXQge1xyXG4gICAgYmFja2dyb3VuZDogIzMxMmEyYTUyO1xyXG4gICAgaGVpZ2h0OiAyMHZoO1xyXG4gICAgd2lkdGg6IDUwdnc7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDQ4MHB4O1xyXG4gICAgbWFyZ2luLXRvcDogMjBweDtcclxuXHJcbiBcclxuICB9XHJcbiAgLmxhbmd1YWdlIHtcclxuIFxyXG4gIH0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style data-styled="active" data-styled-version="5.3.6">.ciEQcS{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="sc-kMjNwy ciEQcS"><div class="row container-fluid"><div class="col-6 ml-4 "><label for="solution "><span class="badge badge-info heading mt-2 "><i class="fas fa-code fa-fw fa-lg"></i></span></label><h1 id="HeaderEditor">Code here</h1><textarea required="" name="solution" id="source" class="source">
+public class my{
+  public static void main(String[] args) {
+
+      
+
+
+    }
+}</textarea><button type="submit" class="btn btn-danger ml-2 mr-2 "><i class="fas fa-cog fa-fw"></i> Run</button><label for="tags" class="mr-1"><b class="heading">Language:</b></label><select id="tags" class="form-control form-inline mb-2 language"><option value="54">C++</option><option value="50">C</option><option value="62" selected="selected">Java</option><option value="71">Python</option></select></div><div class="col-5"><div><span class="badge badge-info heading my-2 "><i class="fas fa-exclamation fa-fw fa-md"></i></span><textarea label="output" placeholder="Output" id="output">
+ Error :Error: Could not find or load main class Main
+Caused by: java.lang.ClassNotFoundException: Main
+</textarea></div></div></div><div class="mt-2 ml-5"><span class="badge badge-primary heading my-2 "><i class="fas fa-user fa-fw fa-md"></i></span><br><textarea id="input" placeholder="User Input"></textarea></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>

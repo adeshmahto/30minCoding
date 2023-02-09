@@ -5,7 +5,8 @@ import Content2 from './Components/Content2'
 function JavaContainer() {
   return (
     <div>
-      <Content1 />
+      <Content1 head={'Introduction'}
+      main={'Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA),[17] meaning that compiled Java code can run on all platforms that support Java without the need to recompile.[18] Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) '}/>
       <Content2 head={`1.Print "Hello World"`}
         main={`In Java, System.out.println() is one of the most used statements. We use it to print the argument passed to it and display it on the screen, but you might not know a lot more than that about it. In this article, we’ll understand Java System.out.println() in detail, so as a programmer.`}
         source={'/java1.png'} />

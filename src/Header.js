@@ -32,9 +32,6 @@ function Header() {
         <a href='/'>
           <span>Home</span>
         </a>
-        <a href='/contact'>
-          <span>Contact</span>
-        </a>
         <a href='/about'>
           <span>About</span>
         </a>
@@ -43,6 +40,9 @@ function Header() {
         </a>
         <a href='/notes'>
           <span>Notes</span>
+        </a>
+        <a href='/editor'>
+          <span>Editor</span>
         </a>
         {/* {
           isAuthenticated && <p> {user.name}</p>
