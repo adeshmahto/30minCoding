@@ -72,8 +72,8 @@ function Header() {
 
       <AniText >
         <span style={{color:'#fc606d'}}> Fun with </span>
-     
-        <Typical
+     <Typical1>
+        <Typical 
            
             loop={Infinity}
             wrapper="b"
@@ -87,6 +87,7 @@ function Header() {
             ]}
         
         />
+        </Typical1>
         </AniText>
 
 
@@ -206,12 +207,23 @@ const Texting=styled.div`
 display:flex;
 justify-content: center;
 
+
 `
 const Text1=styled.h1`
 position:relative;
 left:80px;
 color:white;
 top:80px;
+@media screen and (max-width:385px) {
+  position: relative;
+  left: -330px;
+  color: white;
+  top: -69px;
+  font-size:20px;
+
+    
+     
+     }
 
 `
 const Text2=styled.h1`
@@ -219,6 +231,16 @@ position:relative;
 left:90px;
 color:#fc606d;
 top:80px;
+@media screen and (max-width:385px) {
+  position: relative;
+  left: -320px;
+  color: white;
+  top: -69px;
+  font-size:20px;
+
+    
+     
+     }
 `
 
 const AniText=styled.i`
@@ -227,6 +249,14 @@ font-size:22px;
 position:relative;
 right:10vw;
 top:150px;
+@media screen and (max-width:385px) {
+  position: relative;
+  left: -470px;
+  color: white;
+  top: -10px;
+  font-size:13px;
+  width:60px;
+     }
 `
 const Login=styled.div`
 position:relative;
@@ -235,5 +265,15 @@ left:60vw;
 color:white;
 font-size:18px;
 letter-spacing:1.42px;
+
+`
+
+const Typical1=styled.div`
+@media screen and (max-width:385px){
+  position:relative;
+  left:55px;
+  bottom:17px;
+
+}
 
 `

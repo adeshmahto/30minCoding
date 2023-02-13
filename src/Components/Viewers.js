@@ -79,11 +79,23 @@ img{
     height:100%;
     object-fit:cover;
 }
+
+
+  
 @media screen and (max-width:385px) {
 
-    width:60px;
-    height:70px;
-}
+    height:60px;
+    width:70px;
+
+    img{
+        width:20px;
+        height:30px;
+       
+    }
+     
+     }
+
+
 `
 const Container2=styled.div`
 
@@ -102,6 +114,16 @@ transition:all 250ms cubic-bezier(0.25,0.46,0.45,0.94) 0s;
     box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
 rgb (0 0 0 / 72%) 0px 30px 22px -10px;
 }
+
+@media screen and (max-width:385px) {
+
+    height:200px;
+    width:80px;
+    margin-left:5px;
+    padding:5px;
+  
+     
+     }
 
 
 `
