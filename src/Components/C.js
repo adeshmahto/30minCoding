@@ -1,9 +1,11 @@
 import React from 'react'
 import Content2 from './Content2'
+import Header2 from './Header2'
 
 function C() {
   return (
     <div>
+      <Header2 title={"C"}/>
          <Content2 head={``}
         main={``}
         source={'c1.png'} />

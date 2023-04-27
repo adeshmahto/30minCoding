@@ -82,8 +82,6 @@ function Header() {
               1000,
               'Coding',
               1000,
-      
-          
             ]}
         
         />
@@ -247,7 +245,7 @@ const AniText=styled.i`
 color:white;
 font-size:22px;
 position:relative;
-right:10vw;
+right:11vw;
 top:150px;
 @media screen and (max-width:385px) {
   position: relative;
@@ -269,9 +267,13 @@ letter-spacing:1.42px;
 `
 
 const Typical1=styled.div`
+position: relative;
+left: 98px;
+bottom: 31px;
+
 @media screen and (max-width:385px){
   position:relative;
-  left:55px;
+  left:65px;
   bottom:17px;
 
 }

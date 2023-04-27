@@ -17,6 +17,8 @@ import PythonContainer from './Components/PythonContainer';
 import JavaSriptContainer from './Components/JavaSriptContainer';
 import Cpp from './Components/Cpp';
 import C from './Components/C';
+import Headercopy from './Components/Headercopy';
+import Header2 from './Components/Header2';
 
 
 function App() {
@@ -46,6 +48,8 @@ function App() {
          <Route path='javasriptcontainer' element={<JavaSriptContainer/>} />
          <Route path='cpp' element={<Cpp/>}/>
          <Route path='c'element={<C/>}/>
+         <Route path='h' element={<Headercopy/>}/>
+         <Route path='header' element={<Header2/>}/>
          
       </Routes>
       

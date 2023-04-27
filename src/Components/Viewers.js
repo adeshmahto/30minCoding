@@ -28,7 +28,7 @@ function Viewers() {
             <img  style={{height:'130px',width:"130px"}} src="javasripte.png"/>
             </a>
         </Wrap>
-        <h2>Javascripte</h2>
+        <h2>Javascript</h2>
          </Container2>
          <Container2>
          <Wrap  >

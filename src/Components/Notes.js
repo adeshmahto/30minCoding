@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
+import Header2 from './Header2';
 
 function Notes() {
 
@@ -13,6 +14,7 @@ function Notes() {
     })
   return (
     <div> 
+         <Header2 title={"Notes"}/>
     <Container>
  
    <Form>

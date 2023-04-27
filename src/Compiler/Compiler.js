@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import "./Compiler.css";
+import Header2 from "../Components/Header2";
 export default class Compiler extends Component {
   constructor(props) {
     super(props);
@@ -97,6 +98,7 @@ export default class Compiler extends Component {
   render() { 
     return (
       <>
+      <Header2 title={"Code Editor"}/>
       <Container>
         <Form>
         <div className="row container-fluid">

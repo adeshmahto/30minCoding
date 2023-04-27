@@ -1,9 +1,11 @@
 import React from 'react'
 import Content2 from './Content2'
+import Header2 from './Header2'
 
 function JavaSriptContainer() {
   return (
     <div>
+      <Header2 title={"Javascript"}/>
  <Content2 head={``}
         main={``}
         source={'javasript1.png'} />

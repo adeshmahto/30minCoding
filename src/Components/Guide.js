@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import Header2 from './Header2'
 
 function Guide() {
   return (
   <div>
+       <Header2 title={"Guide"}/>
         <Container>
            {/* dsa */}
           <Form>
