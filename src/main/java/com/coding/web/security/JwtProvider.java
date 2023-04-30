@@ -1,5 +1,6 @@
 package com.coding.web.security;
 
+import com.coding.web.exception.ApiException;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import jakarta.annotation.PostConstruct;
@@ -62,7 +63,7 @@ public class JwtProvider {
         try { return (PrivateKey) keyStore.getKey("springblog", "secret".toCharArray()); }
         catch (KeyStoreException | NoSuchAlgorithmException | UnrecoverableKeyException e) {
             e.printStackTrace();
-            // throw new Exception("Exception occured while retrieving public key from keystore");
+            throw new ApiException("Exception occured while retrieving public key from keystore");
         }
     }
 
@@ -75,7 +76,7 @@ public class JwtProvider {
         try { return keyStore.getCertificate("springblog").getPublicKey(); }
         catch (KeyStoreException e) {
             e.printStackTrace();
-            // throw new Exception("Exception occured while " + "retreiving public key from keystore");
+            throw new ApiException("Exception occured while " + "retreiving public key from keystore");
         }
     }
 
