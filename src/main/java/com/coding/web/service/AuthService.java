@@ -10,6 +10,7 @@ import com.coding.web.security.JwtProvider;
 import lombok.AllArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.jwt.Jwt;
 import org.springframework.stereotype.Service;
@@ -52,7 +53,8 @@ public class AuthService {
     public User getCurrentUser() {
         Jwt principal = (Jwt) SecurityContextHolder.
                 getContext().getAuthentication().getPrincipal();
-        return null;
+        return userRepository.findByUsername(principal.getClaims())
+                .orElseThrow(() -> new UsernameNotFoundException("User name not found - " + principal.getClaims()));
     }
 
     private String generateVerificationToken(User user) {
