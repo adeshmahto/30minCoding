@@ -4,6 +4,7 @@ import com.coding.web.dto.RegisterRequest;
 import com.coding.web.entities.NotificationEmail;
 import com.coding.web.entities.User;
 import com.coding.web.entities.VerificationToken;
+import com.coding.web.exception.ApiException;
 import com.coding.web.repositories.UserRepository;
 import com.coding.web.repositories.VerificationTokenRepository;
 import com.coding.web.security.JwtProvider;
@@ -55,6 +56,13 @@ public class AuthService {
                 getContext().getAuthentication().getPrincipal();
         return userRepository.findByUsername(principal.getClaims())
                 .orElseThrow(() -> new UsernameNotFoundException("User name not found - " + principal.getClaims()));
+    }
+    
+    private void fetchUserAndEnable(VerificationToken verificationToken) {
+        String username = verificationToken.getUser().getUsername();
+        User user = userRepository.findByUsername(username).orElseThrow(() -> new ApiException("User not found with name - " + username));
+        user.setEnabled(true);
+        userRepository.save(user);
     }
 
     private String generateVerificationToken(User user) {
